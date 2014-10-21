@@ -8,3 +8,8 @@ This project will use code for ForgeModLoader and also code for the Sponge serve
 The Forge code will be used to help me understand deobfing at runtime and the Sponge code will be used (basicly all the @shadow code) to allow for devs to hook in to minecrafts internalls and also add in cod eto be called.
 
 This code will also use a modiffied version of the LegacyLauncher which is owned by Mojang.
+
+Will also beusing code my CXGamer that he uses in his Redstone Simulator that loads MCP mappings.
+
+======================================
+This will load your program and read a java file i nyour program that tells it what version of minecraft it wants and what version of MCP feild and method mappings it wants.
