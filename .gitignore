@@ -1,0 +1,8 @@
+*.lock
+*.log
+*.gen
+.metadata/
+
+*.class
+DeobLoader/.settings/org.eclipse.jdt.core.prefs
+DeobLoader/lib-src/LegacyLauncher
