@@ -4,5 +4,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry exported="true" kind="lib" path="lib/launchwrapper-1.5.zip" sourcepath="lib-src/LegacyLauncher"/>
 	<classpathentry kind="lib" path="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/DeobLoader/lib/fml-1.7.10-7.10.86.1007-universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/DeobLoader/lib/asm-4.1-all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/DeobLoader/lib/guava-17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/DeobLoader/lib/lzma-0.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
