@@ -4,5 +4,3 @@
 .metadata/
 .recommenders
 *.class
-DeobLoader/.settings/org.eclipse.jdt.core.prefs
-DeobLoader/lib-src/LegacyLauncher
