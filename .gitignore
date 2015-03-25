@@ -1,6 +1,6 @@
-*.lock
-*.log
-*.gen
-.metadata/
-.recommenders
+/bin/
+/build/
+/eclipse/
+/.gradle/
 *.class
+*.jar

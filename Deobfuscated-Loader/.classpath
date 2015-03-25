@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/Deobfuscated-Loader/lib/SpecialSource-1.7.4-SNAPSHOT-shaded.jar" sourcepath="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/Deobfuscated-Loader/lib-src/SpecialSource-SpecialSource-1.7.3.zip"/>
-	<classpathentry kind="lib" path="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/Deobfuscated-Loader/lib/javassist.jar" sourcepath="C:/Users/bill/Documents/GitHub/DeObfuscating-Loader/Deobfuscated-Loader/lib-src/javassist-rel_3_19_0_ga.zip"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>

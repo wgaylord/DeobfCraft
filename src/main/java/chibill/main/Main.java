@@ -1,3 +1,4 @@
+package chibill.main;
 /**Copyright 2015 chibill
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,15 +12,12 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 **/
-Class: net/minecraft/client/Minecraft
-	Method: checkGLError (java.lang.String) None
-		Where: End
-		Type: Insert
-		Data: System.out.println("THIS IS A TEST!");/nSystem.exit();
-		
 
-		
-Method = Name of method and its arg types with returns.
-Where = End , Start , Line # of method\
-Type = Insert , Replace-All , Remove , Replace-Line
-Data = the data.
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+	
+	}
+
+}

@@ -1,0 +1,28 @@
+apply plugin: 'java'
+
+apply plugin: 'eclipse'
+
+repositories {
+ 
+    mavenCentral()
+
+ }
+ 
+ dependencies {
+   
+    compile 'javassist:javassist:3.+'
+
+    compile 'net.md-5:SpecialSource:1.+'
+
+    compile 'com.googlecode.java-diff-utils:diffutils:1.2'
+
+}
+
+sourceCompatibility = 1.6
+version = '0.1-Beta'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Deobf-Loader',
+                   'Implementation-Version': version
+    }
+}
