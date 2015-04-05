@@ -16,6 +16,7 @@ import java.io.File;
 
 import javax.swing.JLabel;
 
+import chibill.Constants;
 
 public class Main {
 	
@@ -55,7 +56,7 @@ public class Main {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setTitle("Deobfuscating Loader");
+		frame.setTitle(Constants.NAME+ " " + Constants.VERSION);
 		frame.setIconImage(new ImageIcon("logo.png").getImage());
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
