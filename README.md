@@ -8,10 +8,13 @@ This program will allow you to make edits to the minecraft src using patch files
 
 Also you have the ability to use an Access Transformer to change method and variable accesses levels.
 
-This code I hope will help CXGamer with his Redstone Simulator that loads MCP mappings.
+In the end it will also supporting mappings from the Enigma project and MCP mappings.
 
-In the end I also plan on supporting mappings from the Enigma project and MCP mappings.
+It will also allow you to set the MCP mappings for the fields and methods using the MCP-Bot exporter site. And a metadate file in your jar.
 
-It will also allow you to set the MCP mappings for the fields and methods using the MCP-Bot exporter site. And a metadate file I am going to make manditory in your jar file.
+To Dev
+====================  
+
+Run ..gradle eclipse and then import into eclipse.
 
 ======================================
