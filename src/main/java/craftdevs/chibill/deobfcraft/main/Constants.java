@@ -1,4 +1,4 @@
-package craftdevs.chibill.main;
+package craftdevs.chibill.deobfcraft.main;
 
 public final class Constants {
 

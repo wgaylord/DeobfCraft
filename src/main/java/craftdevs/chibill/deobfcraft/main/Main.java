@@ -1,4 +1,4 @@
-package craftdevs.chibill.main;
+package craftdevs.chibill.deobfcraft.main;
 
 import java.awt.EventQueue;
 
@@ -19,7 +19,7 @@ import java.util.HashMap;
 import javax.swing.JLabel;
 import javax.swing.JToggleButton;
 
-import craftdevs.chibill.downloader.JarDownloader;
+import craftdevs.chibill.deobfcraft.downloader.JarDownloader;
 
 public class Main {
 	
