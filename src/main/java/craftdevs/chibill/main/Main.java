@@ -1,6 +1,7 @@
-package craftdevs.main;
+package craftdevs.chibill.main;
 
 import java.awt.EventQueue;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JFileChooser;
@@ -13,8 +14,12 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.util.HashMap;
 
 import javax.swing.JLabel;
+import javax.swing.JToggleButton;
+
+import craftdevs.chibill.downloader.JarDownloader;
 
 public class Main {
 	
@@ -25,6 +30,8 @@ public class Main {
 	private JTextField textField;
 	protected File tragetFile;
 	private about About = new about();
+	
+
 
 	/**
 	 * Launch the application.
@@ -95,6 +102,7 @@ public class Main {
 		btnOpenFile.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
+				JarDownloader.Download("1.5");
 				int temp =fc.showOpenDialog(frame);
 				if(temp == 0){
 				tragetFile = fc.getSelectedFile();

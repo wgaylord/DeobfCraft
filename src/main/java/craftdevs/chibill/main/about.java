@@ -1,4 +1,4 @@
-package craftdevs.main;
+package craftdevs.chibill.main;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;

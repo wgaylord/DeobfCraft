@@ -1,4 +1,4 @@
-package craftdevs.downloader;
+package craftdevs.chibill.downloader;
 
 /**
  * 
@@ -32,12 +32,11 @@ private URL url; // download URL
 private int size; // size of download in bytes
 private int downloaded; // number of bytes downloaded
 private int status; // current status of download
-
-private String TYPE;
-
+private String loc;
 // Constructor for Download.
-public Download(URL url) {
+public Download(URL url,String loc) {
     this.url = url;
+    this.loc = loc;
     size = -1;
     downloaded = 0;
     status = DOWNLOADING;
@@ -138,7 +137,7 @@ public void run() {
             stateChanged();
         }
 
-        new File("Downlaods/" +"");
+        new File(loc +"/");
         file = new RandomAccessFile(getFileName(url), "rw");
         file.seek(downloaded);
 
@@ -194,4 +193,9 @@ private void stateChanged() {
     setChanged();
     notifyObservers();
 }
+
+public String getLoc() {
+	return loc;
+}
+
 }

@@ -1,4 +1,4 @@
-package craftdevs.main;
+package craftdevs.chibill.main;
 
 public final class Constants {
 
@@ -12,7 +12,6 @@ public final class Constants {
 	
 	public static final String MINECRAFT_DOWNLOAD_SERVER = "http://s3.amazonaws.com/Minecraft.Download/versions/";
 
-	public static final String CACHE_LOCATION = "./cache/";
+	public static final String CACHE_LOCATION = "/cache/";
 	
-	public static final String CURRENT_PATCH_VERSION = "1";
 }
