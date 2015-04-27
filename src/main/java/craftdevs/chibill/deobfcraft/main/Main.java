@@ -2,6 +2,10 @@ package craftdevs.chibill.deobfcraft.main;
 
 import java.awt.EventQueue;
 
+import javassist.CannotCompileException;
+import javassist.Loader;
+import javassist.NotFoundException;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JFileChooser;
@@ -14,12 +18,19 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.swing.JLabel;
 import javax.swing.JToggleButton;
 
+import net.md_5.specialsource.Jar;
+import net.md_5.specialsource.util.FileLocator;
 import craftdevs.chibill.deobfcraft.downloader.JarDownloader;
+import craftdevs.chibill.deobfcraft.patcher.MinecraftCtClassFactory;
 
 public class Main {
 	
@@ -113,6 +124,37 @@ public class Main {
 		frame.getContentPane().add(btnOpenFile);
 		
 		JButton btnRunProgram = new JButton("Run Program");
+		btnRunProgram.addActionListener(new ActionListener() {
+			@SuppressWarnings("deprecation")
+			public void actionPerformed(ActionEvent arg0) {
+				MinecraftCtClassFactory test = new MinecraftCtClassFactory();
+				List<File> files = new ArrayList<File>();
+	            files.add(new File("1.8.jar"));
+
+	            Jar jar3;
+				try {
+					jar3 = Jar.init(files);
+					test.setJar(jar3);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				try {
+					test.BuildMCCtClasses();
+				} catch (NotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				try {
+					 			Loader cl = new Loader(test.pool);
+								cl.loadClass("net/minecraft/server/MinecraftServer".replace("/", ".")).getMethod("main", String[].class).invoke((Object)null,(Object) null);
+	
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
 		btnRunProgram.setBounds(288, 182, 136, 23);
 		frame.getContentPane().add(btnRunProgram);
 		
