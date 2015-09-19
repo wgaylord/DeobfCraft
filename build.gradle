@@ -9,11 +9,10 @@ repositories {
  }
  
  dependencies {
-   
-    compile project(':Java-Runtime-Class-Pather')
 
     compile 'net.md-5:SpecialSource:1.+'
     
+    compile project(':Java-Runtime-Class-Patcher') 
 
 }
 

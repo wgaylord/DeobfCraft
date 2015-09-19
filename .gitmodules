@@ -1,0 +1,3 @@
+[submodule "JRCP"]
+	path = JRCP
+	url = https://github.com/chibill/Java-Runtime-Class-Patcher.git

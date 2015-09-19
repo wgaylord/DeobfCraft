@@ -49,5 +49,5 @@ Icon
 #Eclipse
 *.classpath
 *.project
-/.settings
+/.settings/
 /bin/
